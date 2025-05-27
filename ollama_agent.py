@@ -9,8 +9,8 @@ async def main():
     llm = ChatOllama(model='qwen2.5:32b-instruct', num_ctx=32000)
 
     agent = Agent(
-        task="Compare the price of gpt-4o and DeepSeek-V3",
-        llm=llm,
+        task = "Open Google.com, wait for 5 seconds, and then close",
+        llm = llm,
     )
 
     result = await agent.run()

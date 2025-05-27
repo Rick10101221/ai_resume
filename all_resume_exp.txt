@@ -1,0 +1,205 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage{hyperref}
+    \usepackage{xcolor}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \usepackage{fontawesome}
+    \usepackage[margin=0.9in]{geometry}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\LARGE \scshape {Rickesh Khilnani}}\vspace{2mm}\\
+	rickeshkhilnani@gmail.com $\cdot$ (909)732-9499 $\cdot$ \href{https://www.linkedin.com/in/rickesh-khilnani}{linkedin.com/in/rickesh-khilnani} $\cdot$ \href{https://www.github.com/Rick10101221}{github.com/rick10101221}
+	  %$\cdot$ \faGithubSquare \hspace{1mm} 
+	  %LinkedIn: www.linkedin.com/in/rickesh-khilnani $\cdot$
+	  %\faLinkedinSquare \hspace{1mm}
+	  %Github: www.github.com/Rick10101221\\
+\end{center} \vspace{1mm}
+
+%==== Education ====%
+\header{Education} \vspace{1mm}
+\textbf{University of California, San Diego}\hfill La Jolla, CA\\
+BS \textbf{Computer Science} - Minor in \textbf{Mathematics}  \hfill September 2018 - June 2022\\
+Major GPA: \textbf{3.93} Provost Honors\\
+\vspace{2mm}
+
+
+%==== Experience ====%
+\header{Work Experience}
+\vspace{1mm}
+
+\textbf{Epic Systems} \hfill Madison, Wisconsin\\
+\textit{Software Developer}  $\cdot$ {\footnotesize{MUMPS, C\texttt{\#}, .NET Core, TypeScript, React}} \hfill October 2022 - Present\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 0pt \vspace{-1mm}
+	\item Delivered \textbf{2 server-side change orders} in \textbf{350 hours out of the 490 allotted hours}, which \textbf{saved customers \$40,000} in development fees and \$5,000 in annual maintenance costs.
+    \item Developed \textbf{224 pull requests}, \textbf{25000 lines of code added}, and \textbf{8000 lines deleted} in 2.5 years.
+    \item Fixed \textbf{163 QANs}, \textbf{73\texttt{\%} more} than the average 3 year developer, each requiring internal meetings for conflict resolution and approach planning with colleagues and customer service representatives.
+    \item Implemented core functional aspects of Epic's payment plan guarantor summary screen UI in React, Typscript, and C\texttt{\#}, \textbf{resulting in a 50{\texttt{\%}} improvement} in customer workflow efficiency.
+    \item Automated prepayment and credit redistribution across hospital and professional billing accounts, \textbf{saving thousands of hours} of manual credit review for customers and increasing credit-matching reliability.
+    \item Helped the team meet quarterly release deadlines by dedicating 2 weeks of late nights and \textbf{fixing 65\texttt{+} QA and PQA issues} for a statements project I took over for OOO colleagues.
+    \item Partnered with Epic support to resolve technical issues \textbf{impacting 5,000+ users}, ensuring timely fixes and minimal disruption.
+\end{itemize} \vspace{1mm}
+
+\textbf{Imagine Learning} \hfill Remote\\
+\textit{Software Developer Intern}  $\cdot$ {\footnotesize{C\texttt{\#}, .NET Core, Docker, DynamoDB, Slack, Python}} \hfill June 2021 - September 2021\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 0pt \vspace{-1mm}
+	\item Created a slack bot using ASP.NET Core to interface with WNE's list of 6000 whitelisted URLs to-be housed in \textbf{DynamoDB}. Meant to be used as an \textbf{internal tool for 3500 employees}. 
+    \item Spearheaded design and functionality for our \textbf{DynamoDB} and \textbf{Slack APIs}, middleware for authentication, 5 services for handling controller requests, and workflows for frontend-facing Slack-user interactions, completing the project \textbf{2 weeks ahead of schedule}.
+	\item Developed 3 frontend-facing Slack modals, and 8 Slack subcommands for triggering unique workflows, all of which used 6 DTOs and 27 interactive components over 34 C\texttt{\#}  files.
+	\item Wrote 110 Unit and Integration tests using \textbf{xUnit}, \textbf{Moq}, and \textbf{Dependency Injection}.
+	\item Utilized \textbf{Python} for CSV sanitation and performing POST requests to our REST API endpoints, \textbf{Postman} for API documentation, and \textbf{Jira} for sprint tracking in 40 stories over 6 sprints.
+\end{itemize} \vspace{1mm}
+
+\textbf{Arista Networks} \hfill Remote\\
+\textit{Software Developer Intern} $\cdot$ {\footnotesize{React, Typescript, gRPC}} \hfill March 2021 - June 2021\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 0pt \vspace{-1mm}
+	\item Designed an internal API explorer with \textbf{React} and \textbf{Typescript} that allowed developers to visualize request payloads and response bodies sent to and from 20\texttt{+} REST-exposed resource APIs.
+	\item Converted Arista's switch activity events page from directly publishing data to our backend to utilizing a resource API which \textbf{reduced the codebase for event reporting by 50\texttt{\%}}. Rewrote React and Typescript.
+\end{itemize} \vspace{1mm}
+
+\textbf{University of California, San Diego} \hfill La Jolla, CA\\
+\textit{Software Developer} $\cdot$ {\footnotesize{ServiceNow Platform, Javascript, HTML, CSS}} \hfill January 2021 - March 2021\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 0pt \vspace{-1mm}
+	\item Constructed 5 dynamic forms using the ServiceNow platform to automate multi-departmental and campus operations and communication, saving \textbf{hundreds of hours for UCSD employees}.
+	\item Utilized Jira and Agile to debug 2 internal software issues, completed 7 development stories, created 7 internal QA tickets, and released 10 features.
+	\item Developed 20\texttt{+} client and server-side scripts to parse user input, created embedded widgets using \textbf{JavaScript}, \textbf{HTML}, and \textbf{CSS}, and added real-time conditional rendering for forms used by 100\texttt{+} users.
+\end{itemize} \vspace{1mm}
+
+\textbf{Qualcomm} \hfill La Jolla, CA\\
+\textit{Research Intern} $\cdot$ {\footnotesize{Unity, C\texttt{\#}}} \hfill September 2019 - March 2020\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 0pt \vspace{-1mm}
+	\item Developed a Steam VR game \textquotesingle{}Test Anxiety VR\textquotesingle{} with \textbf{Unity} and \textbf{C\texttt{\#}} after conducting 4 weeks of research on the effect of acute and chronic stress on university students.
+	\item Improved GUI design by enhancing custom in-game fonts with TextMesh Pro, developing scripts for an artificial stress gauge, and 2 timer countdowns.
+	\item Identified 3 major areas of student stress and proposed the use of player cortisol levels and blood pressure as tools for quantitative stress measurement in a 14-page research proposal.
+	\item Incorporated 32 multiple choice canvases with working object collisions, option selecting, and fluid menu switching in \textbf{Unity} world space.
+\end{itemize} \vspace{1mm}
+
+
+%==== Project Work ====%
+%    $\cdot$ {\footnotesize{}}
+\header{Project Work} \vspace{2mm}
+
+{\textbf{ACM Teammate Finder}} $\cdot$ {\footnotesize{React, Javascript, Express, Firebase, Node, Postman}} \hfill October 2020 - January 2021
+\begin{itemize} \itemsep 1pt \vspace{-2mm}
+    \item Built a web application in \textbf{React} and \textbf{Javascript} that can be used to find ACM members or other UCSD students and build groups for gaming events, homework, and projects.
+    \item Spearheaded the development of our REST API for \textbf{Firebase} with 20 endpoints by writing the majority of the CRUD functions for our events, applications, and users pages.
+    \item Designed a webpage in \textbf{React} to read user input for our applications page and push to \textbf{Firestore}.
+\end{itemize} \vspace{0mm}
+
+% {\textbf{ACM Teammate Finder}} $\cdot$ {\footnotesize{React, Express, Firebase, Node, Postman}} \hfill October 2020 - January 2021
+% \begin{itemize} \itemsep -2pt \vspace{-2mm}
+%     \item Built a web application that can be used to find ACM members or other UCSD students and build groups for gaming events, homework, and projects.
+%     \item Spearheaded the development and design of our REST API for \textbf{Firebase} with 20 endpoints that interface with our events, applications, and users pages. Designed a webpage in \textbf{React} to read user input for our applications page and push to \textbf{Firestore}.
+% \end{itemize} \vspace{-1mm}
+
+{\textbf{Pokemon Discord Bot}} $\cdot$ {\footnotesize{Firestore, Node, Discord.js}} \hfill October 2020 - November 2020
+\begin{itemize} \itemsep 1pt \vspace{-2mm}
+    \item Developed a Pokemon bot in \textbf{Javascript} that displays Pokemon strengths or weaknesses and allows users to 'catch' Pokemon from randomly generated sprites to add to their collection.
+    \item Decreased boot time by \textbf{200 seconds} after string injecting manually offset indices into image endpoints for 1000 Pokemon sprites.
+    \item Utilized asynchronous function handling for fetch API calls and message parsing.
+\end{itemize} \vspace{0mm}
+
+{\textbf{Contemporary Rap Analysis}} $\cdot$ {\footnotesize{Python, Pandas, Matplotlib, Seaborn}} \hfill October 2020 - December 2020
+\begin{itemize} \itemsep 1pt \vspace{-2mm}
+    \item Led a data analyst team in an 8-week project that aimed to determine if contemporary rap music differed from older rap by looking at lyrical choices for songs from the 1960s to 2010s.
+    \item Utilized a TF-IDF algorithm to determine the unique words within each decade and designed data visualizations with \textbf{Pandas}, \textbf{Matplotlib}, and \textbf{Python}.
+\end{itemize} \vspace{0mm}
+
+{\textbf{Pokemon Generator}} $\cdot$ {\footnotesize{React, MongoDB, Express, Node, Netlify, Heroku}} \hfill October 2020 - November 2020
+\begin{itemize} \itemsep 1pt \vspace{-2mm}
+    \item Spearheaded a web app in \textbf{React} that allows users to design their own Pokemon by drawing an image and filling in name, type, and move fields to store in a \textbf{MongoDB} database for viewing.
+    \item Deployed the \href{https://pokemon-generator-pog.netlify.app}{\underline{frontend}} with \textbf{Netlify} and the backend with \textbf{Heroku}.
+\end{itemize} \vspace{0mm}
+
+{\textbf{Fouro - Sending Virtual Hugs}} $\cdot$ {\footnotesize{React Native, Express, Firebase, Node}} \hfill September 2020 - December 2020
+\begin{itemize} \itemsep 1pt \vspace{-2mm}
+    \item Developed a mobile app in \textbf{React Native} that allows users to send and receive virtual 'hugs' containing images and a personalized message to connect with their closest friends.
+    \item  Created our REST API in \textbf{Javascript} with 27 endpoints and was the sole fullstack developer on a team of 11. Led communication between the frontend and backend teams.
+    \item Co-led the development of our frontend, designed our image compression algorithm for \textbf{Firebase} storage, and wrote some of the backend models while adhering to MVC.
+\end{itemize} \vspace{0mm}
+
+{\textbf{Devdir}} $\cdot$ {\footnotesize{React, Firebase, Node, Figma}} \hfill September 2020 - October 2020
+\begin{itemize} \itemsep 1pt \vspace{-2mm}
+    \item Developed a web application in 96 hours for IvyHacks 2020 to connect developers with one another by allowing users to search for developer skill sets using a multi-tag system.
+    \item Implemented the entire chatroom functionality and improved search algorithm by returning parsable JSON data for frontend rendering and filtering redundant users from search result.
+\end{itemize} \vspace{0mm}
+
+{\textbf{InFuze Beverage Randomizer}} $\cdot$ {\footnotesize{GraphQL, AWS Amplify, DynamoDB, Node}} \hfill September 2020 \\
+\begin{itemize} \itemsep 1pt \vspace {-2mm}
+    \item Created a mobile application in 36 hours for Silly Hacks 2020 to store user-generated drinks and ingredients. Aimed to introduce users to random and crazy beverage combinations.
+    \item  Co-developed the backend infrastructure with \textbf{AWS Appsync} and noSQL \textbf{DynamoDB}, attempted to automate workflow with n8n, and wireframed initial idea with \textbf{Figma}.
+\end{itemize} \vspace{0mm}
+
+{\textbf {Autocomplete as PA}} $\cdot$ {\footnotesize{C\texttt{++}}} \hfill   Feb. 2020 
+\begin{itemize} \itemsep 1pt \vspace{-2mm}
+    \item Developed a deterministic autocomplete program implemented with a prefix tree (TST).
+    \item Completes any word given a fixed prefix and a number of desired suggestions.
+\end{itemize} \vspace{0mm}
+
+{\textbf{Racing Drones}} $\cdot$ {\footnotesize{Cleanflight}} \hfill September 2017 - June 2018
+\begin {itemize} \itemsep 1pt \vspace{-2mm}
+    \item Led and instructed team of 30 club members as president on how to build and program their first racing drones. Built and programmed 2 of my own from scratch with Cleanflight.
+\end{itemize} \vspace{0mm}
+
+%==== Skills ====%
+\header{Skills - Frontend} \vspace{1mm}
+\begin{tabular}{ l l }
+	Languages: & Javascript, Python, C\texttt{\#}, Node, HTML, CSS, C\texttt{++}, SQL, Java, Bash, C\\
+	Tools:  & Docker, Firebase, Firestore, MongoDB, Postman, Expo, Heroku, Netlify, Git\\
+	Libraries: & Axios, xUnit, Moq, Mongoose, Pandas, Seaborn\\
+	Frameworks: & React, ASP.NET Core, React Native, Bootstrap, Express
+\end{tabular} \vspace{0mm}
+\vspace{2mm}
+
+\header{Skills - General} \vspace{1mm}
+\begin{tabular}{ l l }
+	Languages: & Javascript, Node, HTML, CSS, Python, C\texttt{\#}, C\texttt{++}, Java, C, Bash, SQL\\
+	Tools:  & Docker, Postman, Netlify, Expo, Heroku, Firebase, Firestore, MongoDB, Git\\
+	Libraries: & Axios, xUnit, Moq, Mongoose, Pandas, Seaborn\\
+	Frameworks: & React, ASP.NET Core, Bootstrap React Native, Express
+\end{tabular} \vspace{0mm}
+\vspace{2mm}
+
+\header{Skills - Backend} \vspace{1mm}
+\begin{tabular}{ l l }
+	Languages: & Python, C\texttt{\#}, C\texttt{++}, Java, C, SQL, Javascript, Node, HTML, CSS, Bash\\
+	Tools:  & Docker, Firebase, Firestore, MongoDB, Postman, Heroku, Netlify, Expo, Git\\
+	Libraries: & Axios, Mongoose, Pandas, Seaborn\\
+	Frameworks: & React, ASP.NET Core, Express, React Native, Bootstrap
+\end{tabular} \vspace{0mm}
+\vspace{2mm}
+
+\ 
+\end{document}
