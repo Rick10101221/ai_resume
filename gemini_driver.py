@@ -1,6 +1,4 @@
 import asyncio
-import os
-
 from browser_use import Agent, BrowserSession, Controller
 from langchain_google_genai import ChatGoogleGenerativeAI
 from pydantic import BaseModel
@@ -49,10 +47,10 @@ async def getJobDescriptionFromURL(model: str, url: str) -> _Job:
     return parsed
 
 
-async def driver(url: str, model: str = "gemini-1.5-flash") -> None:
+async def driver(model: str, url: str) -> None:
     try:
         job: _Job = await getJobDescriptionFromURL(model = model, url = url)
-        print(f"Job Description: {job.job_description}")
+        # print(f"Job Description: {job.job_description}")
         return job.job_description
     except:
         print("Failed to extract job description. Please check the URL or model.")
